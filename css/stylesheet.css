@@ -1,0 +1,211 @@
+:root{
+    --main-color:#272b30;
+    --p-COLOR:#32383e;
+    --Secondry-color:#09c;
+    --text:white;
+    scroll-behavior: auto;
+}
+
+::-webkit-scrollbar
+{
+    width: 10px;
+  
+}
+::-webkit-scrollbar-track{
+    background-color: var(--p-COLOR);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+body{
+    font-family: 'Comfortaa', cursive;
+    background-color: var(--main-color);
+}
+
+/* start landing section   */
+
+.landing{
+    background-color: var(--main-color);
+    
+}
+.landing img{
+    height: 40vh;
+}
+
+/* end landing section   */
+
+/* start navbar section   */
+.navbar{
+    background-color: rgb(58, 73, 123);
+    margin-top: -35px !important;
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+}
+.nav-link{
+    font-weight: 600;
+    color: var(--text);
+    
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.nav-link.activex{
+    color: var(--Secondry-color) !important ;
+}
+.nav-link:hover{
+    color: var(--Secondry-color) !important ;
+}
+.navbar-brand{
+    color: white ;
+    font-weight: 700;
+}
+
+/* end navbar section   */
+/* start games section */
+.games{
+    background-color: var(--main-color);
+}
+.game-describtion{
+    height: 300px;
+}
+.game-describtion img{
+    height: 150px;
+}
+.game-describtion button{
+    background-color: rgb(58, 73, 123);
+    border: none;
+}
+.game-describtion .text p{
+    font-size: 0.8rem;
+}
+.game-describtion .text h2{
+    font-size: 0.8rem;
+}
+.game-describtion button:hover{
+    background-color: var(--Secondry-color);
+}
+.game-category p{
+    background-color: var(--p-COLOR);
+    font-weight: 600;
+    font-size: 0.7rem;
+    height: 20px;
+    font-weight: 900;
+}
+.game-category{
+    height: 55px;
+   
+}
+
+.game-box{
+    cursor: pointer;
+    transition: all 0.7s;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    -o-transition: all 0.7s;
+}
+.game-box:hover{
+    scale: 1.04;
+}
+/* end games section */
+/* start games Detail */
+.game-detail{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    inset: 0;
+    background-color: var(--main-color);
+}
+.game-detail h2{
+    font-weight: 900;
+}
+.game-detail button{
+    border: 1px solid #ffc107;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.game-detail button:hover{
+    background-color:  #ffc107;
+}
+.game-detail i{
+    position: absolute;
+    z-index: 12312312;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+}
+.game-detail p span{
+    background-color: var(--Secondry-color);
+    font-size: 0.8rem;
+}
+.game-detail .description,.game-detail p{
+    font-size: 0.9rem;
+}
+
+
+/* css spinner */
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+.loader {
+  margin: 60px auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-left: 1.1em solid #ffffff;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.ready{
+    position: absolute;
+    inset: 0;
+    background-color: var(--main-color);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 98098098;
+
+}

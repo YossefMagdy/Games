@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+</head>
+<body>
+
+   <section class="game-market">
+     <!-- start landing section -->
+     <div class="landing">
+      <img src="image/wraper.png" class="w-100" alt="">
+      
+  </div>
+  <!-- end landing section -->
+  <!-- start nav-bar -->
+  <nav class="navbar navbar-expand-lg z-3 position-sticky top-0 col-xl-8  col-lg-10 col-md-6   m-auto rounded-5 shadow shadow-lg">
+    <div class="container px-2">
+      <a class="navbar-brand text-white" href="#"><img src="image/logo-sm.png" alt="" class="w-25 "> GAME REVIEWS
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-start">
+          <li class="nav-item p-lg-0 p-sm-3">
+            <a class="nav-link activex"  GetCateg="MMORPG" aria-current="page" href="#">MMORPG</a>
+          </li>
+          <li class="nav-item p-lg-0 p-sm-3">
+            <a class="nav-link" GetCateg="SHOOTER" href="#">SHOOTER
+            </a>
+          </li>
+          <li class="nav-item p-lg-0 p-sm-3">
+            <a class="nav-link" GetCateg="SAILING" href="#">SAILING
+            </a>
+          </li>
+          <li class="nav-item p-lg-0 p-sm-3">
+            <a class="nav-link" GetCateg="PERMADEATH" href="#">PERMADEATH
+            </a>
+          </li>
+          <li class="nav-item p-lg-0 p-sm-3">
+            <a class="nav-link" GetCateg="SUPERHERO" href="#">SUPERHERO
+            </a>
+          </li>
+          <li class="nav-item p-lg-0 p-sm-3">
+            <a class="nav-link" GetCateg="PIXEL" href="#">PIXEL
+            </a>
+          </li>
+      </div>
+    </div>
+  </nav>
+  <!-- end nav-bar -->
+  <!-- start games section -->
+  <section class="games">
+      <div class="container">
+        <div class="row mt-5 g-3" id="GameBox">
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="game-box border-2 border border-dark rounded-3">
+            <div class="game-describtion p-3">
+              <div class="image overflow-hidden rounded-3">
+                <img src="image/thumbnail.jpg" class="w-100" alt="">
+              </div>
+              <div class="text">
+                <div class="div d-flex justify-content-between mt-3">
+                  <h2 class="text-white">Diablo Immortal</h2>
+                  <button class="btn text-white btn-small">Free</button>
+                </div>
+                <p class=" text-white mt-3 text-center text-white-50">A,free,to,play,browser-based,top-down,hack-and-slash,3D</p>
+              </div>
+            </div>
+            <div class="game-category border-2 border-top border-dark">
+              <div class="d-flex justify-content-between p-3">
+                <div><p class="text-white px-2 py-2 d-flex align-items-center rounded-3">MMORPG</p></div>
+                <div><p class="text-white px-2 py-2 d-flex align-items-center rounded-3">PC (Windows), Web Browser</p></div>
+              </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        
+        
+        </div>
+      </div>
+  </section>
+  <!-- end games section -->
+   </section>
+
+
+    <!-- start games Detail -->
+    
+<section class="game-detail d-none">
+  <div class="container text-white mt-5">
+    <h2>Details Game</h2>
+    <div class="row">
+        <div class="col-md-6">
+          <div class="image p-3">
+            <img src="image/thumbnail.jpg" class="w-100"  alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="info p-3">
+            <h2>Title: Neverwinter</h2>
+            <p>Category: <span>MMORPG</span></p>
+            <p>Platform: <span>Windows</span></p>
+            <p>Status: <span>Live</span></p>
+  
+            <p class="fs-6"></p>
+            <button  class="btn text-white">Show Game</button>
+          </div>
+        </div>
+    </div>
+    <i class="fa-solid fa-xmark fa-2x text-white" id="close"></i>
+  </div>
+</section>
+
+<div class="ready justify-content-center align-items-center">
+  <div class="loader">Loading...</div>
+</div>
+
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+</body>
+</html>
