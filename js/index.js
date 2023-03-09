@@ -6,3 +6,4 @@ $(".nav-link").click(function(){
     $(this).addClass("activex")
     $(this).parent().siblings().children().removeClass("activex")
 })
+new WOW().init();

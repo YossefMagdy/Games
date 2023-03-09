@@ -14,7 +14,7 @@ export class displayGames{
         for(let i=0;i<data.length;i++){
             temp+=
             `
-            <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="col-xl-3 col-lg-4 col-md-6 wow  slideInLeft">
             <div class="game-box border-5 border border-dark rounded-3" GameId="${data[i].id}">
             <div class="game-describtion p-3">
               <div class="image overflow-hidden rounded-3">
